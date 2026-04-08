@@ -346,3 +346,184 @@ footer {
 /* ================================================
 ***************** The People PAGE *****************
 =================================================*/ 
+
+
+.people-page {
+    --people-sand: #efe2c8;
+    --people-ink: #1f2a37;
+    --people-palm: #0f6a45;
+    --people-gold: #b68a2e;
+    --people-card: #fffdfa;
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.14), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.1), transparent 30%),
+        linear-gradient(180deg, #f7f2e8 0%, #f3ecdf 45%, #f8f5ef 100%);
+    color: var(--people-ink);
+}
+
+.people-hero {
+    position: relative;
+    min-height: 420px;
+    border: 1px solid rgba(182, 138, 46, 0.25);
+    box-shadow: 0 1.25rem 2rem rgba(31, 42, 55, 0.13);
+}
+
+.people-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(110deg, rgba(20, 30, 36, 0.78), rgba(20, 30, 36, 0.28) 52%, rgba(20, 30, 36, 0.18)),
+        url("../images/people-images/face-main.jpg");
+    background-size: cover;
+    background-position: center 100%;
+    transform: scale(1.03);
+}
+
+.people-hero-content {
+    position: relative;
+    max-width: 760px;
+}
+
+.people-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--people-sand);
+}
+
+.people-hero-copy {
+    max-width: 62ch;
+}
+
+.people-fact-card {
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.95), rgba(239, 226, 200, 0.55));
+    border: 1px solid rgba(182, 138, 46, 0.24);
+    box-shadow: 0 0.6rem 1.2rem rgba(31, 42, 55, 0.08);
+}
+
+.people-fact-label {
+    color: #5d4d2d;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.74rem;
+    font-weight: 700;
+}
+
+.people-fact-value {
+    color: #1f2a37;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.people-fact-note {
+    color: #3b4d5f;
+    font-size: 0.94rem;
+}
+
+.people-region-card {
+    border: 1px solid rgba(31, 42, 55, 0.12);
+    background: var(--people-card);
+    box-shadow: 0 0.6rem 1.2rem rgba(31, 42, 55, 0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.people-region-card h3 {
+    color: var(--people-palm);
+}
+
+.people-region-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 1.5rem rgba(31, 42, 55, 0.11);
+}
+
+.people-spotlight {
+    border: 1px solid rgba(31, 42, 55, 0.12);
+    background: #fffaf0;
+    box-shadow: 0 1rem 1.6rem rgba(31, 42, 55, 0.08);
+}
+
+.people-spotlight-image {
+    min-height: 320px;
+    background-image:
+        linear-gradient(rgba(24, 32, 38, 0.2), rgba(24, 32, 38, 0.2)),
+        url("../images/people-images/human-potential.png");
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.people-gallery-card {
+    background: #ffffff;
+    border: 1px solid rgba(31, 42, 55, 0.1);
+    box-shadow: 0 0.8rem 1.4rem rgba(31, 42, 55, 0.08);
+}
+
+.people-gallery-image {
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.28s ease;
+}
+
+.people-gallery-card:hover .people-gallery-image {
+    transform: scale(1.04);
+}
+
+.people-gallery-image-one {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.22), rgba(20, 30, 36, 0.22)),
+        url("../images/people-images/face-1.jpg");
+        background-position: center 15%;
+}
+
+.people-gallery-image-two {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.28), rgba(20, 30, 36, 0.28)),
+        url("../images/people-images/face-2.jpg");
+    background-position: center 30%;
+}
+
+.people-gallery-image-three {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.22), rgba(20, 30, 36, 0.22)),
+        url("../images/people-images/face-3.webp");
+    background-position: center 40%;
+}
+
+.people-gallery-card figcaption {
+    color: #2d3e4e;
+    font-size: 0.95rem;
+}
+
+.people-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.12), rgba(182, 138, 46, 0.18));
+    border: 1px solid rgba(15, 106, 69, 0.24);
+}
+
+.people-closing h2 {
+    color: #183c2d;
+}
+
+.people-closing-copy {
+    max-width: 64ch;
+}
+
+@media (max-width: 767.98px) {
+    .people-hero {
+        min-height: 360px;
+    }
+
+    .people-hero-bg {
+        background-image:
+            linear-gradient(160deg, rgba(20, 30, 36, 0.78), rgba(20, 30, 36, 0.4)),
+            url("../images/people-images/face-main.jpg");
+    }
+
+    .people-spotlight-image {
+        min-height: 240px;
+    }
+
+    .people-gallery-image {
+        height: 190px;
+    }
+}

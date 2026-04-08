@@ -1,0 +1,145 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}The People{% endblock %}
+
+{% block content %}
+<section class="people-page">
+	<div class="container-fluid px-4 px-md-5 py-4 py-md-5">
+		<header class="people-hero rounded-4 overflow-hidden mb-4 mb-md-5">
+			<div class="people-hero-bg" role="img" aria-label="Landscape view of Saudi Arabia"></div>
+			<div class="people-hero-content text-white p-4 p-md-5">
+				<p class="people-kicker mb-2">Chapter 1</p>
+				<h1 class="display-5 fw-semibold mb-3">The People of Saudi Arabia</h1>
+				<p class="lead mb-0 people-hero-copy">
+					A diverse society shaped by faith, family, hospitality, and a deep pride in heritage and progress.
+				</p>
+			</div>
+		</header>
+
+		<section class="mb-4 mb-md-5" aria-label="Quick facts about Saudi Arabia">
+			<div class="row g-3 g-md-4">
+				<div class="col-6 col-lg-3">
+					<article class="people-fact-card h-100 p-3 p-md-4 rounded-4">
+						<p class="people-fact-label mb-2">Population</p>
+						<p class="people-fact-value mb-1">35M+</p>
+						<p class="people-fact-note mb-0">A young and growing population across the kingdom.</p>
+					</article>
+				</div>
+				<div class="col-6 col-lg-3">
+					<article class="people-fact-card h-100 p-3 p-md-4 rounded-4">
+						<p class="people-fact-label mb-2">Regions</p>
+						<p class="people-fact-value mb-1">13</p>
+						<p class="people-fact-note mb-0">Each region has its own dialect, customs, and local character.</p>
+					</article>
+				</div>
+				<div class="col-6 col-lg-3">
+					<article class="people-fact-card h-100 p-3 p-md-4 rounded-4">
+						<p class="people-fact-label mb-2">Youth</p>
+						<p class="people-fact-value mb-1">Majority Under 35</p>
+						<p class="people-fact-note mb-0">Young people are driving innovation, arts, and entrepreneurship.</p>
+					</article>
+				</div>
+				<div class="col-6 col-lg-3">
+					<article class="people-fact-card h-100 p-3 p-md-4 rounded-4">
+						<p class="people-fact-label mb-2">Values</p>
+						<p class="people-fact-value mb-1">Family & Hospitality</p>
+						<p class="people-fact-note mb-0">Community bonds remain at the heart of daily life.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="mb-4 mb-md-5" aria-labelledby="people-regions-title">
+			<div class="d-flex align-items-center justify-content-between mb-3">
+				<h2 id="people-regions-title" class="h3 mb-0">Faces of Society Across the Kingdom</h2>
+			</div>
+
+			<div class="row g-3 g-md-4">
+				<div class="col-12 col-md-6 col-xl-3">
+					<article class="people-region-card h-100 rounded-4 p-4">
+						<h3 class="h5 mb-2">Family Life</h3>
+						<p class="mb-0">Families are central to identity, support, and traditions across generations.</p>
+					</article>
+				</div>
+				<div class="col-12 col-md-6 col-xl-3">
+					<article class="people-region-card h-100 rounded-4 p-4">
+						<h3 class="h5 mb-2">Cultural Diversity</h3>
+						<p class="mb-0">From Najd to Hijaz and the south, local customs create a rich social mosaic.</p>
+					</article>
+				</div>
+				<div class="col-12 col-md-6 col-xl-3">
+					<article class="people-region-card h-100 rounded-4 p-4">
+						<h3 class="h5 mb-2">Education & Talent</h3>
+						<p class="mb-0">Students and professionals are building new opportunities in every sector.</p>
+					</article>
+				</div>
+				<div class="col-12 col-md-6 col-xl-3">
+					<article class="people-region-card h-100 rounded-4 p-4">
+						<h3 class="h5 mb-2">Community Spirit</h3>
+						<p class="mb-0">People come together through volunteering, neighborly support, and shared responsibility.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="people-spotlight rounded-4 overflow-hidden mb-4 mb-md-5" aria-label="Landmark spotlight">
+			<div class="row g-0">
+				<div class="col-12 col-lg-6">
+					<div class="people-spotlight-image" role="img" aria-label="Historic landmark in AlUla"></div>
+				</div>
+				<div class="col-12 col-lg-6 d-flex align-items-center">
+					<div class="p-4 p-md-5">
+						<p class="people-kicker mb-2">Spotlight</p>
+						<h2 class="h3 mb-3">From Heritage to Human Potential</h2>
+						<p class="mb-0">
+							Saudi people preserve timeless traditions while shaping a future defined by creativity, ambition, and shared purpose.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mb-4 mb-md-5" aria-labelledby="people-gallery-title">
+			<h2 id="people-gallery-title" class="h3 mb-3">Faces from Different Places</h2>
+			<div class="row g-3 g-md-4">
+				<div class="col-12 col-md-4">
+					<figure class="people-gallery-card rounded-4 overflow-hidden m-0">
+						<div class="people-gallery-image people-gallery-image-one" role="img" aria-label="Portrait of people in an urban setting"></div>
+						<figcaption class="p-3">Confident face in a modern urban setting.</figcaption>
+					</figure>
+				</div>
+				<div class="col-12 col-md-4">
+					<figure class="people-gallery-card rounded-4 overflow-hidden m-0">
+						<div class="people-gallery-image people-gallery-image-two" role="img" aria-label="Portrait of people with traditional elements"></div>
+						<figcaption class="p-3">Warm expressions and traditional cultural details.</figcaption>
+					</figure>
+				</div>
+				<div class="col-12 col-md-4">
+					<figure class="people-gallery-card rounded-4 overflow-hidden m-0">
+						<div class="people-gallery-image people-gallery-image-three" role="img" aria-label="Portrait of people during a public celebration"></div>
+						<figcaption class="p-3">Joyful face during a shared public celebration.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<section class="people-closing text-center rounded-4 p-4 p-md-5">
+			<h2 class="h3 mb-3">A Living Society, A Continuing Story</h2>
+			<p class="mb-4 mx-auto people-closing-copy">
+				From elders who preserve tradition to youth who lead change, the people of Saudi Arabia continue to shape identity, memory, and ambition.
+			</p>
+			<div class="d-flex flex-wrap justify-content-center gap-2">
+				<a class="btn btn-outline-success px-4" href="{% url 'main:land_view' %}">Chapter 1: Land</a>
+				<a class="btn btn-success px-4" href="{% url 'main:traditions_view' %}">Chapter 3: Traditions</a>
+				<a class="btn btn-outline-success px-4" href="{% url 'main:cities_view' %}">Chapter 4: Cities</a>
+				<a class="btn btn-outline-success px-4" href="{% url 'main:royal_family_view' %}">Chapter 5: Royal Family</a>
+				<a class="btn btn-outline-success px-4" href="{% url 'main:future_view' %}">Chapter 6: Future</a>
+				<a class="btn btn-outline-success px-4" href="{% url 'main:legacy_view' %}">Chapter 7: Legacy</a>
+				<a class="btn btn-outline-success px-4" href="{% url 'main:celebrations_view' %}">Chapter 8: Celebrations</a>
+				<a class="btn btn-outline-dark px-4" href="{% url 'main:home_view' %}">Back Home</a>
+			</div>
+		</section>
+	</div>
+</section>
+{% endblock %}
