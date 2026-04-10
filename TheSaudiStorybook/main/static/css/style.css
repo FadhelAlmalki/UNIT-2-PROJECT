@@ -1445,3 +1445,187 @@ footer {
         height: 190px;
     }
 }
+
+/* ================================================
+************** The celebrations PAGE **************
+=================================================*/
+
+.celebrations-page {
+    --celebrations-sand: #efe2c8;
+    --celebrations-ink: #1f2a37;
+    --celebrations-palm: #0f6a45;
+    --celebrations-gold: #b68a2e;
+    --celebrations-card: #fffdfa;
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.14), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.1), transparent 30%),
+        linear-gradient(180deg, #f7f2e8 0%, #f3ecdf 45%, #f8f5ef 100%);
+    color: var(--celebrations-ink);
+}
+
+.celebrations-hero {
+    position: relative;
+    min-height: 420px;
+    border: 1px solid rgba(182, 138, 46, 0.25);
+    box-shadow: 0 1.25rem 2rem rgba(31, 42, 55, 0.13);
+}
+
+.celebrations-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(180deg, rgba(166, 169, 167, 0.78), rgba(32, 48, 57, 0.28) 52%, rgba(20, 30, 36, 0.18)),
+        url("../images/celebrations-images/celebrations-main.webp");
+    background-size: cover;
+    background-position: center 40%;
+    transform: scale(1.03);
+}
+
+.celebrations-hero-content {
+    position: relative;
+    max-width: 760px;
+}
+
+.celebrations-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--celebrations-sand);
+}
+
+.celebrations-hero-copy {
+    max-width: 62ch;
+}
+
+.celebrations-fact-card {
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.95), rgba(239, 226, 200, 0.55));
+    border: 1px solid rgba(182, 138, 46, 0.24);
+    box-shadow: 0 0.6rem 1.2rem rgba(31, 42, 55, 0.08);
+}
+
+.celebrations-fact-label {
+    color: #5d4d2d;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.74rem;
+    font-weight: 700;
+}
+
+.celebrations-fact-value {
+    color: #1f2a37;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.celebrations-fact-note {
+    color: #3b4d5f;
+    font-size: 0.94rem;
+}
+
+.celebrations-region-card {
+    border: 1px solid rgba(31, 42, 55, 0.12);
+    background: var(--celebrations-card);
+    box-shadow: 0 0.6rem 1.2rem rgba(31, 42, 55, 0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.celebrations-region-card h3 {
+    color: var(--celebrations-palm);
+}
+
+.celebrations-region-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 1.5rem rgba(31, 42, 55, 0.11);
+}
+
+.celebrations-spotlight {
+    border: 1px solid rgba(31, 42, 55, 0.12);
+    background: #fffaf0;
+    box-shadow: 0 1rem 1.6rem rgba(31, 42, 55, 0.08);
+}
+
+.celebrations-spotlight-image {
+    min-height: 320px;
+    background-image:
+        linear-gradient(rgba(24, 32, 38, 0.2), rgba(24, 32, 38, 0.2)),
+        url("../images/celebrations-images/riyadh-fireworks.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.celebrations-gallery-card {
+    background: #ffffff;
+    border: 1px solid rgba(31, 42, 55, 0.1);
+    box-shadow: 0 0.8rem 1.4rem rgba(31, 42, 55, 0.08);
+}
+
+.celebrations-gallery-image {
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.28s ease;
+}
+
+.celebrations-gallery-card:hover .celebrations-gallery-image {
+    transform: scale(1.04);
+}
+
+.celebrations-gallery-image-one {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.22), rgba(20, 30, 36, 0.22)),
+        url("../images/celebrations-images/c1.jpg");
+        background-position: center 70%;
+}
+
+.celebrations-gallery-image-two {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.28), rgba(20, 30, 36, 0.28)),
+        url("../images/celebrations-images/c2.jpg");
+    background-position: center 50%;
+}
+
+.celebrations-gallery-image-three {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.22), rgba(20, 30, 36, 0.22)),
+        url("../images/celebrations-images/c3.jpg");
+    background-position: center 50%;
+}
+
+.celebrations-gallery-card figcaption {
+    color: #2d3e4e;
+    font-size: 0.95rem;
+}
+
+.celebrations-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.12), rgba(182, 138, 46, 0.18));
+    border: 1px solid rgba(15, 106, 69, 0.24);
+}
+
+.celebrations-closing h2 {
+    color: #183c2d;
+}
+
+.celebrations-closing-copy {
+    max-width: 64ch;
+}
+
+@media (max-width: 767.98px) {
+    .celebrations-hero {
+        min-height: 360px;
+    }
+
+    .celebrations-hero-bg {
+        background-image:
+            linear-gradient(160deg, rgba(20, 30, 36, 0.78), rgba(20, 30, 36, 0.4)),
+            url("../images/celebrations-images/celebrations-main.webp");
+    }
+
+    .celebrations-spotlight-image {
+        min-height: 240px;
+    }
+
+    .celebrations-gallery-image {
+        height: 190px;
+    }
+}
