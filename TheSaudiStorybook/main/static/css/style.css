@@ -1077,3 +1077,187 @@ footer {
         height: 190px;
     }
 }
+
+/* ================================================
+***************** The Future PAGE *****************
+=================================================*/
+
+.future-page {
+    --future-sand: #efe2c8;
+    --future-ink: #1f2a37;
+    --future-palm: #0f6a45;
+    --future-gold: #b68a2e;
+    --future-card: #fffdfa;
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.14), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.1), transparent 30%),
+        linear-gradient(180deg, #f7f2e8 0%, #f3ecdf 45%, #f8f5ef 100%);
+    color: var(--future-ink);
+}
+
+.future-hero {
+    position: relative;
+    min-height: 420px;
+    border: 1px solid rgba(182, 138, 46, 0.25);
+    box-shadow: 0 1.25rem 2rem rgba(31, 42, 55, 0.13);
+}
+
+.future-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(180deg, rgba(166, 169, 167, 0.78), rgba(32, 48, 57, 0.28) 52%, rgba(20, 30, 36, 0.18)),
+        url("../images/future-images/future-main.webp");
+    background-size: cover;
+    background-position: center 20%;
+    transform: scale(1.03);
+}
+
+.future-hero-content {
+    position: relative;
+    max-width: 760px;
+}
+
+.future-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--future-sand);
+}
+
+.future-hero-copy {
+    max-width: 62ch;
+}
+
+.future-fact-card {
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.95), rgba(239, 226, 200, 0.55));
+    border: 1px solid rgba(182, 138, 46, 0.24);
+    box-shadow: 0 0.6rem 1.2rem rgba(31, 42, 55, 0.08);
+}
+
+.future-fact-label {
+    color: #5d4d2d;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.74rem;
+    font-weight: 700;
+}
+
+.future-fact-value {
+    color: #1f2a37;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.future-fact-note {
+    color: #3b4d5f;
+    font-size: 0.94rem;
+}
+
+.future-region-card {
+    border: 1px solid rgba(31, 42, 55, 0.12);
+    background: var(--future-card);
+    box-shadow: 0 0.6rem 1.2rem rgba(31, 42, 55, 0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.future-region-card h3 {
+    color: var(--future-palm);
+}
+
+.future-region-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 1.5rem rgba(31, 42, 55, 0.11);
+}
+
+.future-spotlight {
+    border: 1px solid rgba(31, 42, 55, 0.12);
+    background: #fffaf0;
+    box-shadow: 0 1rem 1.6rem rgba(31, 42, 55, 0.08);
+}
+
+.future-spotlight-image {
+    min-height: 320px;
+    background-image:
+        linear-gradient(rgba(24, 32, 38, 0.2), rgba(24, 32, 38, 0.2)),
+        url("../images/future-images/future-spotlight.png");
+    background-size: cover;
+    background-position: center 50%;
+}
+
+.future-gallery-card {
+    background: #ffffff;
+    border: 1px solid rgba(31, 42, 55, 0.1);
+    box-shadow: 0 0.8rem 1.4rem rgba(31, 42, 55, 0.08);
+}
+
+.future-gallery-image {
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.28s ease;
+}
+
+.future-gallery-card:hover .future-gallery-image {
+    transform: scale(1.04);
+}
+
+.future-gallery-image-one {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.22), rgba(20, 30, 36, 0.22)),
+        url("../images/future-images/future-neom.jpg");
+        background-position: center 100%;
+}
+
+.future-gallery-image-two {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.28), rgba(20, 30, 36, 0.28)),
+        url("../images/future-images/future-redsea.jpg");
+    background-position: center 50%;
+}
+
+.future-gallery-image-three {
+    background-image:
+        linear-gradient(rgba(20, 30, 36, 0.22), rgba(20, 30, 36, 0.22)),
+        url("../images/future-images/future-riyadh-metro.webp");
+    background-position: center 80%;
+}
+
+.future-gallery-card figcaption {
+    color: #2d3e4e;
+    font-size: 0.95rem;
+}
+
+.future-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.12), rgba(182, 138, 46, 0.18));
+    border: 1px solid rgba(15, 106, 69, 0.24);
+}
+
+.future-closing h2 {
+    color: #183c2d;
+}
+
+.future-closing-copy {
+    max-width: 64ch;
+}
+
+@media (max-width: 767.98px) {
+    .future-hero {
+        min-height: 360px;
+    }
+
+    .future-hero-bg {
+        background-image:
+            linear-gradient(160deg, rgba(20, 30, 36, 0.78), rgba(20, 30, 36, 0.4)),
+            url("../images/future-images/future-main.webp");
+    }
+
+    .future-spotlight-image {
+        min-height: 240px;
+    }
+
+    .future-gallery-image {
+        height: 190px;
+    }
+}
