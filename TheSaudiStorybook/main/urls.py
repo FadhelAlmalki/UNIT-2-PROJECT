@@ -5,6 +5,7 @@ app_name = 'main'
 
 urlpatterns = [
     path('', views.home_view, name='home_view'),
+    path('mode/<str:mode>/', views.mode_view, name='mode_view'),
     path('land/', views.land_view, name='land_view'),
     path('people/', views.people_view, name='people_view'),
     path('traditions/', views.traditions_view, name='traditions_view'),

@@ -24,6 +24,111 @@ footer {
 }
 
 /* ================================================
+****** The dark/light mode feature - General ******
+=================================================*/
+
+body.dark-mode {
+    background: #1f2a37;
+    color: #f8f5ef;
+}
+
+/* Improve contrast for Back Home button (btn-outline-dark) */
+.btn-outline-dark {
+    border-color: #1f2a37;
+    color: #1f2a37;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+    background-color: #1f2a37;
+    border-color: #1f2a37;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-outline-dark {
+    border-color: #cbd5e1;
+    color: #e5e7eb;
+    background-color: transparent;
+}
+
+body.dark-mode .btn-outline-dark:hover,
+body.dark-mode .btn-outline-dark:focus {
+    background-color: #e5e7eb;
+    border-color: #e5e7eb;
+    color: #111827;
+}
+
+
+
+/* ================================================
+******************* The Header ********************
+=================================================*/ 
+
+.site-header {
+    padding: 1.25rem 0 0.5rem;
+}
+
+.mode-nav {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.mode-toggle-link {
+    width: 2.35rem;
+    height: 2.35rem;
+    border-radius: 999px;
+    border: 1px solid rgba(31, 42, 55, 0.16);
+    background: rgba(255, 255, 255, 0.78);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mode-toggle-link:hover {
+    transform: translateY(-1px);
+    border-color: rgba(15, 106, 69, 0.35);
+    box-shadow: 0 0.35rem 0.7rem rgba(31, 42, 55, 0.12);
+}
+
+.mode-toggle-link .material-symbols-outlined {
+    color: #6a7685;
+    font-size: 1.32rem;
+}
+
+.mode-toggle-link .active-icon {
+    color: #0f6a45;
+}
+
+@media (max-width: 767.98px) {
+    .site-header {
+        padding-top: 1rem;
+    }
+
+    .site-header-inner {
+        padding-top: 1.15rem;
+    }
+
+    .mode-nav {
+        right: 0.85rem;
+        top: 0.7rem;
+    }
+
+    .site-brand h2 {
+        font-size: 1.8rem;
+    }
+
+    .site-brand p {
+        font-size: 1rem;
+    }
+}
+
+/* ================================================
 ****************** The home PAGE ******************
 =================================================*/ 
 
@@ -323,6 +428,56 @@ footer {
     max-width: 64ch;
 }
 
+body.dark-mode .land-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .land-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .land-fact-card,
+body.dark-mode .land-region-card,
+body.dark-mode .land-gallery-card,
+body.dark-mode .land-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .land-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .land-fact-value,
+body.dark-mode .land-fact-note,
+body.dark-mode .land-gallery-card figcaption,
+body.dark-mode .land-region-card p,
+body.dark-mode .land-spotlight p,
+body.dark-mode .land-spotlight h2,
+body.dark-mode .land-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .land-region-card h3,
+body.dark-mode .land-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .land-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .land-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
+}
+
 @media (max-width: 767.98px) {
     .land-hero {
         min-height: 360px;
@@ -507,6 +662,56 @@ footer {
     max-width: 64ch;
 }
 
+body.dark-mode .people-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .people-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .people-fact-card,
+body.dark-mode .people-region-card,
+body.dark-mode .people-gallery-card,
+body.dark-mode .people-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .people-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .people-fact-value,
+body.dark-mode .people-fact-note,
+body.dark-mode .people-gallery-card figcaption,
+body.dark-mode .people-region-card p,
+body.dark-mode .people-spotlight p,
+body.dark-mode .people-spotlight h2,
+body.dark-mode .people-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .people-region-card h3,
+body.dark-mode .people-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .people-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .people-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
+}
+
 @media (max-width: 767.98px) {
     .people-hero {
         min-height: 360px;
@@ -688,6 +893,56 @@ footer {
 
 .traditions-closing-copy {
     max-width: 64ch;
+}
+
+body.dark-mode .traditions-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .traditions-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .traditions-fact-card,
+body.dark-mode .traditions-region-card,
+body.dark-mode .traditions-gallery-card,
+body.dark-mode .traditions-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .traditions-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .traditions-fact-value,
+body.dark-mode .traditions-fact-note,
+body.dark-mode .traditions-gallery-card figcaption,
+body.dark-mode .traditions-region-card p,
+body.dark-mode .traditions-spotlight p,
+body.dark-mode .traditions-spotlight h2,
+body.dark-mode .traditions-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .traditions-region-card h3,
+body.dark-mode .traditions-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .traditions-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .traditions-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
 }
 
 @media (max-width: 767.98px) {
@@ -874,6 +1129,56 @@ footer {
     max-width: 64ch;
 }
 
+body.dark-mode .cities-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .cities-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .cities-fact-card,
+body.dark-mode .cities-region-card,
+body.dark-mode .cities-gallery-card,
+body.dark-mode .cities-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .cities-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .cities-fact-value,
+body.dark-mode .cities-fact-note,
+body.dark-mode .cities-gallery-card figcaption,
+body.dark-mode .cities-region-card p,
+body.dark-mode .cities-spotlight p,
+body.dark-mode .cities-spotlight h2,
+body.dark-mode .cities-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .cities-region-card h3,
+body.dark-mode .cities-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .cities-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .cities-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
+}
+
 @media (max-width: 767.98px) {
     .cities-hero {
         min-height: 360px;
@@ -1056,6 +1361,56 @@ footer {
 
 .royal-family-closing-copy {
     max-width: 64ch;
+}
+
+body.dark-mode .royal-family-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .royal-family-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .royal-family-fact-card,
+body.dark-mode .royal-family-region-card,
+body.dark-mode .royal-family-gallery-card,
+body.dark-mode .royal-family-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .royal-family-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .royal-family-fact-value,
+body.dark-mode .royal-family-fact-note,
+body.dark-mode .royal-family-gallery-card figcaption,
+body.dark-mode .royal-family-region-card p,
+body.dark-mode .royal-family-spotlight p,
+body.dark-mode .royal-family-spotlight h2,
+body.dark-mode .royal-family-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .royal-family-region-card h3,
+body.dark-mode .royal-family-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .royal-family-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .royal-family-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
 }
 
 @media (max-width: 767.98px) {
@@ -1242,6 +1597,56 @@ footer {
     max-width: 64ch;
 }
 
+body.dark-mode .future-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .future-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .future-fact-card,
+body.dark-mode .future-region-card,
+body.dark-mode .future-gallery-card,
+body.dark-mode .future-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .future-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .future-fact-value,
+body.dark-mode .future-fact-note,
+body.dark-mode .future-gallery-card figcaption,
+body.dark-mode .future-region-card p,
+body.dark-mode .future-spotlight p,
+body.dark-mode .future-spotlight h2,
+body.dark-mode .future-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .future-region-card h3,
+body.dark-mode .future-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .future-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .future-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
+}
+
 @media (max-width: 767.98px) {
     .future-hero {
         min-height: 360px;
@@ -1426,6 +1831,56 @@ footer {
     max-width: 64ch;
 }
 
+body.dark-mode .legacy-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .legacy-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .legacy-fact-card,
+body.dark-mode .legacy-region-card,
+body.dark-mode .legacy-gallery-card,
+body.dark-mode .legacy-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .legacy-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .legacy-fact-value,
+body.dark-mode .legacy-fact-note,
+body.dark-mode .legacy-gallery-card figcaption,
+body.dark-mode .legacy-region-card p,
+body.dark-mode .legacy-spotlight p,
+body.dark-mode .legacy-spotlight h2,
+body.dark-mode .legacy-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .legacy-region-card h3,
+body.dark-mode .legacy-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .legacy-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .legacy-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
+}
+
 @media (max-width: 767.98px) {
     .legacy-hero {
         min-height: 360px;
@@ -1608,6 +2063,56 @@ footer {
 
 .celebrations-closing-copy {
     max-width: 64ch;
+}
+
+body.dark-mode .celebrations-page {
+    background:
+        radial-gradient(circle at 12% 8%, rgba(182, 138, 46, 0.12), transparent 35%),
+        radial-gradient(circle at 90% 18%, rgba(15, 106, 69, 0.16), transparent 30%),
+        linear-gradient(180deg, #1b2430 0%, #15202b 45%, #101923 100%);
+    color: #e5e7eb;
+}
+
+body.dark-mode .celebrations-hero {
+    border-color: rgba(182, 138, 46, 0.32);
+    box-shadow: 0 1.25rem 2rem rgba(3, 8, 13, 0.5);
+}
+
+body.dark-mode .celebrations-fact-card,
+body.dark-mode .celebrations-region-card,
+body.dark-mode .celebrations-gallery-card,
+body.dark-mode .celebrations-spotlight {
+    background: rgba(20, 31, 42, 0.9);
+    border-color: rgba(184, 200, 214, 0.22);
+    box-shadow: 0 0.8rem 1.3rem rgba(3, 8, 13, 0.4);
+}
+
+body.dark-mode .celebrations-fact-label {
+    color: #d9b96a;
+}
+
+body.dark-mode .celebrations-fact-value,
+body.dark-mode .celebrations-fact-note,
+body.dark-mode .celebrations-gallery-card figcaption,
+body.dark-mode .celebrations-region-card p,
+body.dark-mode .celebrations-spotlight p,
+body.dark-mode .celebrations-spotlight h2,
+body.dark-mode .celebrations-closing p {
+    color: #dbe5ee;
+}
+
+body.dark-mode .celebrations-region-card h3,
+body.dark-mode .celebrations-closing h2 {
+    color: #7de2b0;
+}
+
+body.dark-mode .celebrations-region-card:hover {
+    box-shadow: 0 1rem 1.6rem rgba(3, 8, 13, 0.52);
+}
+
+body.dark-mode .celebrations-closing {
+    background: linear-gradient(160deg, rgba(15, 106, 69, 0.25), rgba(182, 138, 46, 0.2));
+    border-color: rgba(125, 226, 176, 0.34);
 }
 
 @media (max-width: 767.98px) {

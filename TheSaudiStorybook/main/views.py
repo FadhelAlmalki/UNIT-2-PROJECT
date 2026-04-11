@@ -1,5 +1,5 @@
 from django.http import HttpRequest
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Main view for the home page
 def home_view(request: HttpRequest):
@@ -45,3 +45,15 @@ def legacy_view(request: HttpRequest):
 def celebrations_view(request: HttpRequest):
     
     return render(request, 'main/celebrations.html')
+
+# Mode view for handling light/dark mode switching
+def mode_view(request: HttpRequest, mode: str):
+
+    response = redirect(request.GET.get("next", "/"))
+
+    if mode == "light":
+        response.set_cookie('mode', 'light')
+    elif mode == "dark":
+        response.set_cookie('mode', 'dark')
+
+    return response
