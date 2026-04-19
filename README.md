@@ -36,7 +36,7 @@ Dependencies are listed in `requirements.txt`.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/FadhelAlmalki/The-Saudi-Storybook.git
+git clone https://github.com/FadhelAlmalki/the-saudi-storybook.git
 cd The-Saudi-Storybook
 ```
 
