@@ -37,7 +37,7 @@ Dependencies are listed in `requirements.txt`.
 
 ```bash
 git clone https://github.com/FadhelAlmalki/the-saudi-storybook.git
-cd The-Saudi-Storybook
+cd TheSaudiStorybook
 ```
 
 ### 2. Create and activate a virtual environment
